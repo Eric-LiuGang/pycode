@@ -13,12 +13,12 @@ from urllib2 import Request,urlopen,URLError,HTTPError
 
 #variable
 
-zabbix_url = "http://172.17.254.20/zabbix/api_jsonrpc.php"
+zabbix_url = "http://*/zabbix/api_jsonrpc.php"
 zabbix_header = {"Content-Type":"application/json"}
 zabbix_user = "admin"
 zabbix_password = "zabbix"
 groupname="Glico_Wechat"
-auth_code = "92c76072ed0acb629fc383e825051c2d"
+auth_code = "*"
 f=open('C:\host_items.csv','w')
 priority_dict={0:"Not classified",1:"information",2:"warming",3:"average",4:"high",5:"disaster"}
 status_dict = {0:"enable",1:"disable"}
