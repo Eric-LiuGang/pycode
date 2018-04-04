@@ -6,7 +6,7 @@ import sys
 from urllib2 import Request,urlopen,URLError,HTTPError
 
 
-zabbix_url = "http://172.31.2.121/zabbix/api_jsonrpc.php"
+zabbix_url = "http://*/zabbix/api_jsonrpc.php"
 zabbix_header = {"Content-Type":"application/json"}
 zabbix_user = "admin"
 zabbix_password = "zabbix"
@@ -14,7 +14,7 @@ auth_code = ""
 
 #step 1 get all host which status 0
 
-f=open('C:\Users\liugang\Desktop\host_trigger.txt','w')
+f=open('C:\*','w')
 #step 1 get all host which status 0
 json_base = {
     "jsonrpc":"2.0",
